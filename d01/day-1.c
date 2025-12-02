@@ -5,6 +5,7 @@
 #include <string.h>
 #include <sys/stat.h>
 #include <sys/mman.h>
+#include <errno.h>
 // #include "read_file.h"
 
 static int current_value = 50;
@@ -12,7 +13,7 @@ static int password = 0;
 
 
 /* This code was extracted from one of my other projects available at:
- *     github.com/architmishra-16/c-helpers
+ *     github.com/architmishra-15/c-helpers
  */
 typedef struct {
   size_t size;
